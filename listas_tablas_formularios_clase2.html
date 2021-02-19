@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Estas son listas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Recetas con carne</h2>
+            <!--Lista desordenada-->
+            <ul>
+                <li>Pechito de cerdo</li>
+                <li>Costillitas a la riojana</li>
+                <li>Bondiola a la cerveza</li>
+            </ul>
+            <!--Lista ordenada-->
+            <ol>
+                <li>Otra cosa</li>
+                <li>Carne con papas</li>
+                <li>Carne picada con salsa</li>
+            </ol>
+            <!--con letras-->
+            <ol type="A">
+                <li>Otra cosa</li>
+                <li>Carne con papas</li>
+                <li>Carne picada con salsa</li>
+            </ol>
+            <!--Listas anidadas-->
+            <ul>
+                <li>
+                    <h2>Recetas con pescado</h2>
+                </li>
+                <ol>
+                    <li>Trucha con algo</li>
+                    <li>Salmon grillado</li>
+                    <li>carpa empanada</li>
+                </ol>
+
+                <li>
+                    <h2>Recetas con verduras</h2>
+                </li>
+                <ol start="4">
+                    <li>Berenjena rellena</li>
+                    <li>Tarta de verdura</li>
+                    <li>wok de vegetables</li>
+                </ol>
+
+                <li>
+                    <h2>Recetas con verduras(reversa)</h2>
+                </li>
+                <ol reversed='3'>
+                    <li>Berenjena rellena</li>
+                    <li>Tarta de verdura</li>
+                    <li>wok de vegetables</li>
+                </ol>
+            </ul>
+
+        </section>
+
+        <h2>Vamos con tablas</h2>
+
+        <section>
+            <table cellpadding="5" border="2" cellpadding="3">
+                <!--Reglon de la tabla-->
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                </tr>
+                <tr>
+                    <th>ferrari</th>
+                    <th>cualquier</th>
+                    <th>1991</th>
+                </tr>
+                <tr>
+                    <th>chevrolet</th>
+                    <th>clasico</th>
+                    <th>1980</th>
+                </tr>
+            </table>
+
+            <table border="1" cellpadding="4">
+                <colgroup>
+                    <col style="background-color: lightblue;">
+                    <col style="background-color: blue;">
+                    <col style="background-color: red;">
+                </colgroup>
+                <!--Reglon de la tabla CON COLOR-->
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                </tr>
+                <tr>
+                    <th>ferrari</th>
+                    <th>cualquier</th>
+                    <th>1991</th>
+                </tr>
+                <tr>
+                    <th>chevrolet</th>
+                    <th>clasico</th>
+                    <th>1980</th>
+                </tr>
+            </table>
+        </section>
+
+        <h2>Vamos con formularios</h2>
+
+        <section>
+            <center>
+                <h2>Formularios</h2>
+                <form action="#">
+                    <label for="nombre">Ingrese su nombre:</label>
+                    <input type="text" placeholder="Escribe aca" required>
+                    <br>
+                    <label for="mail">Ingrese su mail:</label>
+                    <input type="text" value="mail@cualquierda.com" placeholder="Escribe aca tu mail" required>
+                    <br>
+                    <label for="clave">Ingrese su clave:</label>
+                    <input type="password" placeholder="Contrasenia" required>
+                    <br>
+                    <label for="consulta">Ingrese su consulta</label>
+                    <Textarea name="mensaje" cols="40" rows="10" minlength="10"></Textarea>
+                </form>
+            </center>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
