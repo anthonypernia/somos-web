@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <!-- ETIQUETA PARA FORMULARIOS -->
+
+    <center>
+        <h3>Formulario</h3>
+        <form action="recibir_form_post.php" method="get">
+
+            <label for="texto">Entrada de texto</label>
+            <input type="text" placeholder="Entrada de texto" value="" required>
+
+            <br>
+            <br>
+
+            <label for="correo">Entrada de correo</label>
+            <input type="email" placeholder="Entrada de correo" value="" required>
+
+            <br>
+            <br>
+
+            <label for="pass">Entrada de contraseña</label>
+            <input type="password" placeholder="Entrada de contraseña" value="" required>
+            <br>
+            <br>
+            <label for="mensaje">Escribe tu consulta</label>
+            <textarea name="mensaje" cols="40" rows="4" minlength="5" maxlength="200"></textarea>
+            <br>
+
+            <input type="number" value="1" min="0" max="3">
+
+            <br>
+            <br>
+
+            <select>
+                <option>Opcion 1</option>
+                <option>Opcion 2</option>
+                <option>Opcion 3</option>
+            </select>
+
+            <br>
+            <br>
+
+            <input type="checkbox" id="rojo"><label for="rojo">Rojo</label>
+            <input type="checkbox" id="amarillo"><label for="amarillo">Amarillo</label>
+            <input type="checkbox" id="verde"><label for="verde">Verde</label>
+
+            <br>
+            <label for="color">Elija el color:</label>
+            <input type="color" name="color" value="#00ff55" />
+            <br>
+
+            <input type="radio" id="blanco" name="radio" checked><label for="blanco">Blanco</label>
+            <input type="radio" id="negro" name="radio"><label for="negro">Negro</label>
+
+            <br>
+            <br>
+
+            <input type="submit" value="Enviar Formulario">
+
+        </form>
+    </center>
+    <br>
+    <!-- ejemplo fieldset-->
+    <form action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label>Nombre: <input type="text" name="nom" /><label><br>
+                    <label>Apellidos: <input type="text" name="ape" /><label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Datos del domicilo</legend>
+            <label>Calle: <input type="text" name="calle" /><label><br>
+                    <label>Población: <input type="text" name="pobla" /><label><br>
+                            <label>Provincia: <input type="text" name="prov" /><label><br>
+        </fieldset><br>
+        <input type="submit" value="Enviar Formulario">
+        <input type="reset" value="LimpiarFormulario">
+    </form>
+    <br>
+    <!--otro ejemplo-->
+    <form action="#" method="post">
+        <p>Término a buscar: <input type="text" name="nom" /></p>
+        <p><button><img src="img/lupa.png" width="15px"> Buscar</button></p>
+    </form>
+    <hr>
+    <!--agrupar-->
+    <form>
+
+        <select name="pais" size="1">
+            <option value="xx"> Elija un pais ...</option>
+            <optgroup label="América">
+                <option value="ar"> Argentina</option>
+                <option value="mx"> México</option>
+                <option value="co"> Colombia</option>
+            </optgroup>
+            <optgroup label="Europa" disabled>
+                <option value="es"> España</option>
+                <option value="fr"> Francia</option>
+                <option value="it"> Italia</option>
+            </optgroup>
+        </select>
+    </form>
+
+</body>
+
+</html>
