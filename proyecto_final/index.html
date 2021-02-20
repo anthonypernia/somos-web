@@ -11,53 +11,168 @@
 <body>
     <header>
         <div>
-            <div>
-                <img src="assets/logo1.png" alt="Logo">
-            </div>
-            <div>
-                <object data="nav.html" type=""></object>
-            </div>
+            <nav>
+                <img src="assets/logo1.png" alt="Logo" width="50px">
+                <a href="#Principal">Inicio</a>
+                <a href="#Clases">Clases</a>
+                <a href="#Inscribete">Inscribete</a>
+                <a href="#Nosotros">Contacto | Nosotros</a>
+            </nav>
         </div>
     </header>
-    <section>
-        <div>
+    <main>
+        <!--Main-->
+        <section id="Inicio">
+            <img src="assets/main_image.jpg" alt="main_image" style="opacity: 0.5;">
+            <h3>Claro que puedes!</h3>
+        </section>
+        <!--Main-->
+
+        <!--Clases-->
+        <section id="Clases">
             <div>
-                <p><b>Quienes somos</b></p>
-                <p>AP ACADEMY es una academia para reducir la brecha de personas adultas con la transformación digital y
-                    el conocimiento.
-                    Disponemos de clases de alfabetización, educación primaria, secundaria, y también acercamos a la
-                    tecnología a personas de edad adulta, enseñándoles a usar las aplicaciones de oficina mas comunes en
-                    el mercado, para darles también la oportunidad de una salida laboral .</p>
-                <img src="assets/main_photo.png" alt="Persona Adulta Estudiando">
+                <h3>Cursos:</h3>
+                <ol>
+                    <li>Plan Alfabetizacion</li>
+                    <ul>
+                        <li>Su objetivo es que las personas adquieran y desarrollen las habilidades de lectura y
+                            escritura y matemáticas para lograr aprendizajes que les permitan una mejor comunicacion
+                        </li>
+                    </ul>
+                    <li>Educacion Primaria</li>
+                    <ul>
+                        <li>dirigida a jóvenes y adultos mayores de 14 años que quieran terminar sus estudios a través
+                            de las Escuelas de educacion primaria</li>
+                    </ul>
+                    <li>Educacion Secundaria</li>
+                    <ul>
+                        <li>En el trayecto Secundario toma en consideración los saberes previos de los estudiantes, en
+                            la misma academia o alguna otra, y se le ofrece una modalidad de cursada accesible para
+                            adultos que tienen otras responsabilidades familiares y laborales</li>
+                    </ul>
+                    <li>Introduccion al mundo digital</li>
+                    <ul>
+                        <li>Se le enseña a pensonas adultas conocimientos basicos de tecnologia, que serviran como
+                            reinsercion laboral, tales como:</li>
+                        <ul>
+                            <li>Office Word</li>
+                            <li>Office Power Point</li>
+                            <li>Office Excel</li>
+                            <li>Arquitectura de un computador</li>
+                        </ul>
+                    </ul>
+                </ol>
             </div>
-            <div>
-                <nav>
-                    <a href="">
-                        <img src="assets/logo_alfa.png" alt="Logo alfab">
-                        <h3>Plan Alfabetizacion</h3>
-                    </a>
-                    <a href="">
-                        <img src="assets/logo_primaria.png" alt="Logo primaria">
-                        <h3>Primaria</h3>
-                    </a>
-                    <a href="">
-                        <img src="assets/logo_secundaria.png" alt="Logo secundaria">
-                        <h3>Secundaria</h3>
-                    </a>
-                    <a href="">
-                        <img src="assets/logo_t_digital.png" alt="Logo Transf. Digital">
-                        <h3>Transformacion Digital</h3>
-                    </a>
-                </nav>
-            </div>
-        </div>
-    </section>
+        </section>
+        <!--Clases-->
+
+        <!--Nosotros-->
+
+        <section id="Nosotros">
+
+            <h2>Nosotros</h2>
+            <p>AP ACADEMY es una academia para reducir la brecha de personas adultas con la transformación digital y
+                el conocimiento.
+                Disponemos de clases de alfabetización, educación primaria, secundaria, y también acercamos a la
+                tecnología a personas de edad adulta, enseñándoles a usar las aplicaciones de oficina mas comunes en
+                el mercado, para darles también la oportunidad de una salida laboral .</p>
+            <img src="assets/profesor_enseñando.jpg" alt="">
+            <br><br>
+            <h2>Hemos ayudado a</h2>
+            <table border="1" cellpadding="4">
+                <colgroup>
+                    <col style="background-color:darkgray;">
+                </colgroup>
+                <!--Reglon de la tabla CON COLOR-->
+                <tr>
+                    <th>Genero</th>
+                    <th>Cantidad</th>
+                    <th>Nivel</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Basica - Alfabetizacion</td>
+                    <th>Hombres</th>
+                    <th>43</th>
+                </tr>
+                <tr>
+                    <th>Mujeres</th>
+                    <th>56</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Primaria</td>
+                    <th>Hombres</th>
+                    <th>12</th>
+                </tr>
+                <tr>
+                    <th>Mujeres</th>
+                    <th>10</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Secundaria</td>
+                    <th>Hombres</th>
+                    <th>6</th>
+                </tr>
+                <tr>
+                    <th>Mujeres</th>
+                    <th>12</th>
+                </tr>
+            </table>
+        </section>
+        <!--Nosotros-->
+        <!--Inscribete-->
+        <section id="Inscribete">
+            <h2>Inscribete a AP Academy</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Datos personales del estudiante</legend>
+                    <label for="name">Nombres:<input type="text"></label>
+                    <br>
+                    <label for="surname">Apellidos:<input type="text"></label>
+                    <br>
+                    <label for="age">Edad:<input type="text"></label>
+                    <br>
+                    <label for="mail">Apellidos:<input type="text"></label>
+                    <br>
+                    <label for="">Genero</label>
+                    <input type="radio" name="radio"><label for="f">F</label>
+                    <input type="radio" name="radio"><label for="m">M</label>
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Datos de domicilio del estudiante</legend>
+                    <label for="street">Calle:<input type="text"></label>
+                    <br>
+                    <label for="number">Numero:<input type="text"></label>
+                    <br>
+                    <label for="pc">CP:<input type="text"></label>
+                    <br>
+                    <label for="city">Ciudad:<input type="text"></label>
+                    <br>
+                    <label for="country">Pais: <select name="pais" size="1">
+                            <option value="ar"> Argentina</option>
+                            <option value="ch"> Chile</option>
+                            <option value="co"> Colombia</option>
+                            <option value="ven"> Venezuela</option>
+                        </select></label>
+                    <br>
+                </fieldset>
+                <input type="reset" value="LimpiarFormulario">
+                <input type="submit" value="Enviar Formulario">
+                <br>
+            </form>
+            <br>
+            <a href="ayuda_personalizada.html" target="_blank"> <button>¿Necesitas Ayuda Personalizada?</button> </a>
+            <br>
+        </section>
+        <!--Inscribete-->
+    </main>
     <footer>
         <nav>
-            <a href="#">Facebook</a>
-            <a href="#">Youtube</a>
-            <a href="#">Intagram</a>
-            <a href="#">Mail</a>
+            <a href="https://www.youtube.com/channel/UCIOpKGxrCv3SCv6s9lyxSbQ">Youtube</a>
+            <a href="https://www.instagram.com/anthonyperniah/" target="_blank">Intagram</a>
+            <a href="https://www.linkedin.com/in/anthonypernia/" target="_blank">Linkedin</a>
+            <a href="mailto:anthonyperniah@gmail.com?subject=" target="_blank">Mail</a>
         </nav>
     </footer>
 

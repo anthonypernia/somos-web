@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ayuda Personalizada</title>
 </head>
-
 <body>
-    <header>
-
-    </header>
-    <main>
-        <section>
-            <center>
-                <h1>Inscribete a AP Academy</h1>
+            <!--Inscribete-->
+            <section id="Inscribete">
+                <h1>Inscribete a AP Academy (Ayuda Personalizada)</h1>
                 <form action="#">
                     <fieldset>
                         <legend>Datos personales del estudiante</legend>
@@ -31,16 +25,7 @@
                         <input type="radio" name="radio"><label for="f">F</label>
                         <input type="radio" name="radio"><label for="m">M</label>
                         <br>
-                        <select name="pais" size="1">
-                            <optgroup label="">
-                                <option value="ar"> Argentina</option>
-                                <option value="ch"> Chile</option>
-                                <option value="co"> Colombia</option>
-                                <option value="ven"> Venezuela</option>
-                            </optgroup>
-                        </select>
                     </fieldset>
-
                     <fieldset>
                         <legend>Datos de domicilio del estudiante</legend>
                         <label for="street">Calle:<input type="text"></label>
@@ -51,17 +36,22 @@
                         <br>
                         <label for="city">Ciudad:<input type="text"></label>
                         <br>
-                        <label for="country">Pais:<input type="text"></label>
+                        <label for="country">Pais: <select name="pais" size="1">
+                                <option value="ar"> Argentina</option>
+                                <option value="ch"> Chile</option>
+                                <option value="co"> Colombia</option>
+                                <option value="ven"> Venezuela</option>
+                            </select></label>
+                        <br>
+                        <label for="comentario">Cuentanos en que necesitas la ayuda Personalizada</label>
+                        <textarea name="comentario" cols="30" rows="4" minlength="5" maxlength="200"></textarea>
                         <br>
                     </fieldset>
+                    <input type="reset" value="LimpiarFormulario">
                     <input type="submit" value="Enviar Formulario">
+                    <br>
                 </form>
-            </center>
-        </section>
-    </main>
-    <footer>
-
-    </footer>
+                <br>
+            </section>
 </body>
-
 </html>
