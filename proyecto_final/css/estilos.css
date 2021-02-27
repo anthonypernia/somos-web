@@ -10,23 +10,39 @@ body{
   height: 30px;
   float: left;
 }
+nav{
+  text-align: right;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
 .titulos-primarios{
   font-style: italic;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: 0.5rem;
 }
 
-nav{
-  text-align: right;
-}
-.img-logo{
-  width: 30px;
+.lista{
+  list-style-type: upper-latin;
+  list-style-position: inside;
+  
 }
 
-.clases-div {
+.texto{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.img-logo{
+  width: 40px;
+}
+
+.div-centrado {
   width:80em; 
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 table {
@@ -39,6 +55,14 @@ table .titulo-tabla{
 
 .main-img {
   opacity: 0.5;
+}
+.img-comun{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.inicio-div{
+  text-align: center;
+  margin-top: 3rem;
 }
 .clases-div {
   background-color: #cfcfcf;
@@ -55,6 +79,15 @@ table{
 margin: 0 auto;
 }
 .video-promo{
-  width: 500px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
+}
+hr{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  size: 2;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
 }
