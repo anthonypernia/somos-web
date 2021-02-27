@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #ededed;
+}
+.nav-l {
+  height: 30px;
+  float: left;
+}
+.titulos-primarios{
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 0.5rem;
+}
+
+nav{
+  text-align: right;
+}
+.img-logo{
+  width: 30px;
+}
+
+.clases-div {
+  width:80em; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table .titulo-tabla{
+  background-color:#cfcfcf;
+}
+
+.main-img {
+  opacity: 0.5;
+}
+.clases-div {
+  background-color: #cfcfcf;
+}
+.titulos-secundarios{
+  color: #2e2d2d;
+}
+
+.formularios{
+  background-color: #cfcfcf;
+}
+
+table{
+margin: 0 auto;
+}
+.video-promo{
+  width: 500px;
+  height: 300px;
+}

@@ -1,0 +1,23 @@
+main{
+    font-style: italic;
+}
+
+h2,p{
+    color: red;
+}
+main h1{
+    color: blue;
+}
+section p{
+    color: blueviolet;
+}
+.titulo{
+    color: yellow;
+}
+#titulo_id{
+    color: aquamarine;
+}
+.cualquier_clase{
+    color: brown;
+    font-size: 15px;
+}

@@ -6,33 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AP Academy</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
     <header>
         <div>
             <nav>
-                <img src="assets/logo1.png" alt="Logo" width="50px">
-                <a href="#Principal">Inicio</a>
-                <a href="#Clases">Clases</a>
-                <a href="#Inscribete">Inscribete</a>
-                <a href="#Nosotros">Contacto | Nosotros</a>
+                <img class="nav-l img-logo" src="media/image/logo1.png" alt="Logo">
+                <a class="titulos-secundarios nav-r" href="#principal">Inicio</a>
+                <a class="titulos-secundarios nav-r" href="#clases">Clases</a>
+                <a class="titulos-secundarios nav-r" href="#inscribete">Inscribete</a>
+                <a class="titulos-secundarios nav-r" href="#nosotros">Nosotros</a>
             </nav>
         </div>
     </header>
     <main>
         <!--Main-->
-        <section id="Inicio">
-            <img src="assets/main_image.jpg" alt="main_image" style="opacity: 0.5;">
-            <h3>Claro que puedes!</h3>
+        <section id="inicio">
+            <div class="inicio-div">
+                <img class='main-img' src="media/image/main_image.jpg" alt="main_image">
+                <h1 class="titulos-primarios">AP Academy</h1>
+                <h3 class="titulos-secundarios">Claro que puedes!</h3>
+            </div>
         </section>
         <!--Main-->
 
         <!--Clases-->
-        <section id="Clases">
-            <div>
-                <h3>Cursos:</h3>
-                <ol>
+        <section id="clases">
+            <div class="clases-div">
+                <h3 class="titulos-secundarios">Cursos:</h3>
+                <ol class="lista">
                     <li>Plan Alfabetizacion</li>
                     <ul>
                         <li>Su objetivo es que las personas adquieran y desarrollen las habilidades de lectura y
@@ -65,66 +69,75 @@
             </div>
         </section>
         <!--Clases-->
+        <div>
+            <button type="button" class="collapsible">Open Collapsible</button>
+            <div class="content">
+                <p>Lorem ipsum dfsfsfsfsfolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
 
         <!--Nosotros-->
 
-        <section id="Nosotros">
+        <section id="nosotros">
 
-            <h2>Nosotros</h2>
+            <h2 class="titulos-secundarios">Nosotros</h2>
             <p>AP ACADEMY es una academia para reducir la brecha de personas adultas con la transformación digital y
                 el conocimiento.
                 Disponemos de clases de alfabetización, educación primaria, secundaria, y también acercamos a la
                 tecnología a personas de edad adulta, enseñándoles a usar las aplicaciones de oficina mas comunes en
                 el mercado, para darles también la oportunidad de una salida laboral .</p>
-            <img src="assets/profesor_enseñando.jpg" alt="">
+            <img src="media/image/profesor_enseñando.jpg" alt="">
             <br><br>
-            <h2>Hemos ayudado a</h2>
-            <table border="1" cellpadding="4">
-                <colgroup>
-                    <col style="background-color:darkgray;">
-                </colgroup>
+            <h2 class="titulos-secundarios">Hemos ayudado a</h2>
+            <table class="" cellpadding="1">
                 <!--Reglon de la tabla CON COLOR-->
-                <tr>
+                <tr class="titulo-tabla">
                     <th>Genero</th>
                     <th>Cantidad</th>
                     <th>Nivel</th>
                 </tr>
 
                 <tr>
-                    <td rowspan="2">Basica - Alfabetizacion</td>
-                    <th>Hombres</th>
-                    <th>43</th>
+                    <th rowspan="2">Basica - Alfabetizacion</th>
+                    <td>Hombres</td>
+                    <td>43</td>
                 </tr>
                 <tr>
-                    <th>Mujeres</th>
-                    <th>56</th>
+                    <td>Mujeres</td>
+                    <td>56</td>
                 </tr>
                 <tr>
-                    <td rowspan="2">Primaria</td>
-                    <th>Hombres</th>
-                    <th>12</th>
+                    <th rowspan="2">Primaria</th>
+                    <td>Hombres</td>
+                    <td>12</td>
                 </tr>
                 <tr>
-                    <th>Mujeres</th>
-                    <th>10</th>
+                    <td>Mujeres</td>
+                    <td>10</td>
                 </tr>
                 <tr>
-                    <td rowspan="2">Secundaria</td>
-                    <th>Hombres</th>
-                    <th>6</th>
+                    <th rowspan="2">Secundaria</th>
+                    <td>Hombres</td>
+                    <td>6</td>
                 </tr>
                 <tr>
-                    <th>Mujeres</th>
-                    <th>12</th>
+                    <td>Mujeres</td>
+                    <td>12</td>
                 </tr>
             </table>
+            <br>
+            <iframe class="video-promo" width="834" height="469" src="https://www.youtube.com/embed/yQ7T_vPTQhw" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </section>
         <!--Nosotros-->
         <!--Inscribete-->
-        <section id="Inscribete">
-            <h2>Inscribete a AP Academy</h2>
+        <section id="inscribete">
+            <h2 class="titulos-secundarios">Inscribete a AP Academy</h2>
             <form action="#">
-                <fieldset>
+                <fieldset class="formularios">
                     <legend>Datos personales del estudiante</legend>
                     <label for="name">Nombres:<input type="text"></label>
                     <br>
@@ -139,7 +152,7 @@
                     <input type="radio" name="radio"><label for="m">M</label>
                     <br>
                 </fieldset>
-                <fieldset>
+                <fieldset class="formularios">
                     <legend>Datos de domicilio del estudiante</legend>
                     <label for="street">Calle:<input type="text"></label>
                     <br>
@@ -162,7 +175,7 @@
                 <br>
             </form>
             <br>
-            <a href="ayuda_personalizada.html" target="_blank"> <button>¿Necesitas Ayuda Personalizada?</button> </a>
+            <a href="ayuda-personalizada.html" target="_blank"> <button>¿Necesitas Ayuda Personalizada?</button> </a>
             <br>
         </section>
         <!--Inscribete-->
