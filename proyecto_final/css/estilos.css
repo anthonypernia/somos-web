@@ -1,43 +1,72 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   background-color: #ededed;
 }
-.nav-l {
+a {
+  text-decoration: none;
+  color: black;
+}
+nav ul{
+  list-style:none;
+}
+nav li{
+  display: inline-block;
+  position: relative;
+  width: 5%;
+}
+nav ul ul{
+  position: absolute;
+  display: none;
+}
+nav ul ul li{
+  display: block;
+  width: 8rem;
+  margin: 0.5rem;
+}
+
+nav ul li:hover ul{
+  display: block;
+}
+.navL {
   height: 30px;
   float: left;
 }
-nav{
-  text-align: right;
+nav {
   margin-top: 0.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  text-align: right;
+  position: relative;
 }
-.titulos-primarios{
+
+
+
+
+.titulosPrimarios {
   font-style: italic;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   letter-spacing: 0.5rem;
 }
 
-.lista{
+.lista {
   list-style-type: upper-latin;
   list-style-position: inside;
-  
 }
 
-.texto{
-  font-family: 'Montserrat', sans-serif;
+.texto {
+  font-family: "Montserrat", sans-serif;
 }
 
-.img-logo{
+.imgLogo {
   width: 40px;
 }
 
-.div-centrado {
-  width:80em; 
+.divCentrado {
+  width: 80em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
@@ -49,45 +78,54 @@ table {
   border-collapse: collapse;
 }
 
-table .titulo-tabla{
-  background-color:#cfcfcf;
+table .tituloTabla {
+  background-color: #cfcfcf;
 }
 
-.main-img {
+.mainImg {
   opacity: 0.5;
 }
-.img-comun{
+.imgComun {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.inicio-div{
+.inicioDiv {
   text-align: center;
   margin-top: 3rem;
 }
-.clases-div {
+.divClases {
   background-color: #cfcfcf;
+  padding: 1rem;
 }
-.titulos-secundarios{
+.container-clases {
+  display: flex;
+  align-content: center;
+}
+.itemClases {
+  width: 25rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.titulosSecundarios {
   color: #2e2d2d;
 }
 
-.formularios{
+.formularios {
   background-color: #cfcfcf;
 }
 
-table{
-margin: 0 auto;
+table {
+  margin: 0 auto;
 }
-.video-promo{
+.videoPromo {
   width: 300px;
   height: 200px;
 }
-hr{
+hr {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
   size: 2;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  
 }

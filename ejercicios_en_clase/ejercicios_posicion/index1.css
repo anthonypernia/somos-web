@@ -1,0 +1,24 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+.flexible{
+    display: flex;
+}
+
+.header-flex{
+    flex-direction: column;
+    background-color: blue;
+}
+.medio{
+    flex-direction: row;
+    background-color: aquamarine;
+    margin: 20px;
+}
+
+.footer-flex{
+    flex-direction: column;
+    background-color: blueviolet;
+}
+

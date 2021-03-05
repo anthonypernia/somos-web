@@ -15,76 +15,90 @@
     <header>
         <div>
             <nav>
-                <img class="nav-l img-logo" src="media/image/logo1.png" alt="Logo">
-                <a class="titulos-secundarios nav-r" href="#principal">Inicio</a>
-                <a class="titulos-secundarios nav-r" href="#clases">Clases</a>
-                <a class="titulos-secundarios nav-r" href="#inscribete">Inscribete</a>
-                <a class="titulos-secundarios nav-r" href="#nosotros">Nosotros</a>
+                <img class="navL imgLogo" src="media/image/logo1.png" alt="Logo">
+                <ul>
+                    <li>
+                        <a class="titulosSecundarios navR" href="#principal">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="titulosSecundarios navR" href="#clases">Clases</a>
+                    </li>
+                    <li>
+                        <a class="titulosSecundarios navR" href="">Nosotros</a>
+                        <ul>
+                            <li><a href="#nosotros">Nosotros - Escuela</a></li>
+                            <li><a href="" target="_blank">Nosotros - Creador</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="titulosSecundarios navR" href="#inscribete">Inscribete</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
     <main>
         <!--Main-->
         <section id="inicio">
-            <div class="inicio-div">
-                <img class='img-comun main-img' src="media/image/main_image.jpg" alt="main_image">
-                <h1 class="titulos-primarios">AP Academy</h1>
-                <h3 class="titulos-secundarios">Claro que puedes!</h3>
+            <div class="inicioDiv">
+                <img class='imgComun mainImg' src="media/image/main_image.jpg" alt="main_image">
+                <h1 class="titulosPrimarios">AP Academy</h1>
+                <h3 class="titulosSecundarios">Claro que puedes!</h3>
             </div>
         </section>
         <!--Main-->
-<hr>
+        <hr>
         <!--Clases-->
         <section id="clases">
-            <div class="div-clases div-centrado">
-                <h3 class="titulos-secundarios">Cursos:</h3>
-                <ol class="lista texto">
-                    <li>Plan Alfabetizacion</li>
-                    <ul>
-                        <li>Su objetivo es que las personas adquieran y desarrollen las habilidades de lectura y
-                            escritura y matemáticas para lograr aprendizajes que les permitan una mejor comunicacion
-                        </li>
-                    </ul>
-                    <li>Educacion Primaria</li>
-                    <ul>
-                        <li>dirigida a jóvenes y adultos mayores de 14 años que quieran terminar sus estudios a través
-                            de las Escuelas de educacion primaria</li>
-                    </ul>
-                    <li>Educacion Secundaria</li>
-                    <ul>
-                        <li>En el trayecto Secundario toma en consideración los saberes previos de los estudiantes, en
+            <div class="divClases divCentrado">
+                <h3 class="titulosSecundarios">Clases:</h3>
+                <div class="container-clases">
+                    <div class="itemClases">
+                        <h4>Plan Alfabetizacion</h4>
+                        <p>Su objetivo es que las personas adquieran y desarrollen las habilidades de lectura y
+                            escritura y matemáticas para lograr aprendizajes que les permitan una mejor comunicacion</p>
+                    </div>
+                    <div class="itemClases">
+                        <h4>Educacion Primaria</h3>
+                            <p>dirigida a jóvenes y adultos mayores de 14 años que quieran terminar sus estudios a
+                                través
+                                de las Escuelas de educacion primaria</p>
+                    </div>
+                    <div class="itemClases">
+                        <h4>Educacion Secundaria</h4>
+                        <p>En el trayecto Secundario toma en consideración los saberes previos de los estudiantes, en
                             la misma academia o alguna otra, y se le ofrece una modalidad de cursada accesible para
-                            adultos que tienen otras responsabilidades familiares y laborales</li>
-                    </ul>
-                    <li>Introduccion al mundo digital</li>
-                    <ul>
-                        <li>Se le enseña a pensonas adultas conocimientos basicos de tecnologia, que serviran como
+                            adultos que tienen otras responsabilidades familiares y laborales</p>
+                    </div>
+                    <div class="itemClases">
+                        <h4>Introduccion al mundo digital</h4>
+                        <p>Se le enseña a pensonas adultas conocimientos basicos de tecnologia, que serviran como
                             reinsercion laboral, tales como: Office Word, Office Power Point, Office Excel, Arquitectura
-                            de un computador</li>
-                    </ul>
-                </ol>
+                            de un computador</p>
+                    </div>
+                </div>
             </div>
         </section>
         <!--Clases-->
 
-<hr>
+        <hr>
         <!--Nosotros-->
 
         <section id="nosotros">
-            <div class="div-nosotros div-centrado">
-                <h2 class="titulos-secundarios">Nosotros</h2>
+            <div class="divNosotros divCentrado">
+                <h2 class="titulosSecundarios">Nosotros</h2>
                 <p class="texto">AP ACADEMY es una academia para reducir la brecha de personas adultas con la
                     transformación digital y
                     el conocimiento.
                     Disponemos de clases de alfabetización, educación primaria, secundaria, y también acercamos a la
                     tecnología a personas de edad adulta, enseñándoles a usar las aplicaciones de oficina mas comunes en
                     el mercado, para darles también la oportunidad de una salida laboral .</p>
-                <img class="img-comun" src="media/image/profesor_enseñando.jpg" alt="">
+                <img class="imgComun" src="media/image/profesor_enseñando.jpg" alt="">
                 <br><br>
-                <h2 class="titulos-secundarios">Hemos ayudado a</h2>
+                <h2 class="titulosSecundarios">Hemos ayudado a</h2>
                 <table class="" cellpadding="1">
                     <!--Reglon de la tabla CON COLOR-->
-                    <tr class="titulo-tabla">
+                    <tr class="tituloTabla">
                         <th>Genero</th>
                         <th>Cantidad</th>
                         <th>Nivel</th>
@@ -119,7 +133,7 @@
                     </tr>
                 </table>
                 <br>
-                <iframe class="video-promo" width="834" height="469" src="https://www.youtube.com/embed/yQ7T_vPTQhw"
+                <iframe class="videoPromo" width="834" height="469" src="https://www.youtube.com/embed/yQ7T_vPTQhw"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -129,8 +143,8 @@
         <hr>
         <!--Inscribete-->
         <section id="inscribete">
-            <div class="div-centrado">
-                <h2 class="titulos-secundarios">Inscribete a AP Academy</h2>
+            <div class="divCentrado">
+                <h2 class="titulosSecundarios">Inscribete a AP Academy</h2>
                 <form action="#">
                     <fieldset class="formularios">
                         <legend>Datos personales del estudiante</legend>
