@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  200px 100px 100px;
+    grid-template-areas: "header header"
+                        "nav nav"
+                        "main section"
+                        "aside aside"
+                        "footer footer"
+                                    ;
+}
+
+header{
+    background-color: aqua;
+    display: flex;
+    grid-area: header;
+    justify-content: space-around;
+}
+nav{
+    grid-area: nav;
+}
+
+h1{
+    color: black;
+    text-transform: capitalize;
+}
+li{
+    letter-spacing: 14px;
+    font-size:
+}
