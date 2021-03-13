@@ -41,6 +41,7 @@ nav {
   margin-right: 0.5rem;
   text-align: right;
   position: relative;
+  background-color: blue;
 }
 
 
@@ -92,6 +93,7 @@ table .tituloTabla {
 .inicioDiv {
   text-align: center;
   margin-top: 3rem;
+  background-color: red;
 }
 .divClases {
   display: flex;

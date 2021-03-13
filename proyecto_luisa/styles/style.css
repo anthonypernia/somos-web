@@ -1,29 +1,45 @@
 body{
     margin: 0;
     padding: 0;
-}
-/*
-NAVBAR
-*/
-.navBar ul{
-    list-style: none;
+    box-sizing: border-box;
+    background-color: #FCD5CE;
 }
 
-.navBar ul a{
-    text-decoration: none;
-    color: black;
+.grid{
+    display: grid;
+    grid-template-areas:"nav"
+                        "main"
+                        "bio"
+                        "people"
+                        "footer";
+    grid-template-columns: 1fr;
 }
+
+/*
+NAVBAR
+  */
 
 .navBar{
     background-color: #FEC5BB;
-    position: relative;
-    text-align: right;
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+.navBar ul{
+    list-style: none;
 }
 .navBar li{
-    display: inline-block;
-    position: relative;
+    display: inline;
+}
+
+
+.navBar a{
+    text-decoration: none;
+    color: black;
     width: 5%;
-  }
+    text-align: center;
+}
 /*
 MAIN
 */
@@ -36,6 +52,7 @@ MAIN
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    grid-area: main;
 }
 
 .textMain{
@@ -49,12 +66,28 @@ MAIN
     display: block;
     text-align: center;
 }
+/*
+BIO
+*/
+.bioDiv{
+    background-color: #FEC5BB;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    grid-area: bio;
+}
 
+/*
+PEOPLE
+*/
 .peopleDiv{
     height: 100%;
     background-position: center;
     background-attachment: fixed;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    grid-area: people;
 }
 
 .itemContainerPeople{
@@ -65,11 +98,37 @@ MAIN
 }
 
 .itemPeople{
-    background-color: blue;
+    width: 400px;
+    background-color: #FEC5BB;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
 .itemPeople img{
     width: 400px;
 }
+.itemPeople p{
+    font-style: italic;
+}
 
+/*
+Footer
+*/
+.footerBar{
+    background-color: #FEC5BB;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+}
+.footerBar ul{
+    list-style: none;
+}
+.footerBar li{
+    display: inline;
+}
+.footerBar a{
+    text-decoration: none;
+    color: black;
+    width: 5%;
+    text-align: center;
+}
