@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/*
+NAVBAR
+*/
+.navBar ul{
+    list-style: none;
+}
+
+.navBar ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.navBar{
+    background-color: #FEC5BB;
+    position: relative;
+    text-align: right;
+}
+.navBar li{
+    display: inline-block;
+    position: relative;
+    width: 5%;
+  }
+/*
+MAIN
+*/
+.mainDiv{
+    min-height: 100vh;
+    background-image:
+    linear-gradient(45deg, rgba(248, 204, 204, 0.623), rgba(250, 187, 187, 0.733)),
+    url('../images/main1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.textMain{
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textMain div{
+    display: block;
+    text-align: center;
+}
+
+.peopleDiv{
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: red;
+}
+
+.itemContainerPeople{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.itemPeople{
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+}
+.itemPeople img{
+    width: 400px;
+}
+
