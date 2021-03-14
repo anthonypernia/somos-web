@@ -50,7 +50,7 @@ MAIN
       rgba(248, 204, 204, 0.623),
       rgba(250, 187, 187, 0.733)
     ),
-    url("../images/main1.jpg");
+    url("../images/somos1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -77,9 +77,14 @@ BIO
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   grid-area: bio;
+  padding: 20px;
 }
-
+.bioDiv img{
+  width: 400px;
+}
 /*
 PEOPLE
 */
@@ -91,6 +96,7 @@ PEOPLE
   flex-direction: column;
   text-align: center;
   grid-area: people;
+  padding: 20px;
 }
 
 .itemContainerPeople {
@@ -111,11 +117,19 @@ PEOPLE
   width: 400px;
 }
 
+.itemPeople:hover{
+  transform: rotate(1deg)
+}
+
 /*
 Footer
 */
 .footerBar {
-  background-color: #fec5bb;
+  background-image: linear-gradient(
+    45deg,
+    rgba(250, 225, 221),
+    rgba(254, 197, 187)
+  );
   grid-area: footer;
   display: flex;
   justify-content: center;
@@ -133,62 +147,126 @@ Footer
   text-align: center;
 }
 /*
-fonts
+fonts pc and tablet
 */
+@media (min-width: 700px) {
+  h1 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+  }
 
-h1 {
-  font-style: normal;
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
-  font-weight: 100;
+  h2 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .textMain h2 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+  }
+  h3 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  h4 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  h5 {
+    font-style: italic;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  p {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  a {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .footerBar a {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+  }
 }
 
-h2 {
-  font-style: normal;
-  font-family: "Roboto", sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-}
-.textMain h2 {
-  font-style: normal;
-  font-family: "Roboto", sans-serif;
-  font-size: 22px;
-  font-weight: 200;
-}
-h3 {
-  font-style: normal;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-}
-h4 {
-  font-style: normal;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-}
-h5 {
-  font-style: italic;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-}
-p {
-  font-style: normal;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  font-weight: 100;
-}
-a {
-  font-style: normal;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
+/*
+fonts mobile
+*/
+@media (max-width: 699px) {
+  h1 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+  }
+
+  h2 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .textMain h2 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+  }
+  h3 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  h4 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  h5 {
+    font-style: italic;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  p {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  a {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .footerBar a {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+  }
 }
 
-.footerBar a{
-  font-style: normal;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-}
