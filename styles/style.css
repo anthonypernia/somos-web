@@ -44,7 +44,7 @@ NAVBAR
 MAIN
 */
 .mainDiv {
-  min-height: 100vh;
+  height: 93vh;
   background-image: linear-gradient(
       45deg,
       rgba(248, 204, 204, 0.623),
@@ -73,7 +73,12 @@ MAIN
 BIO
 */
 .bioDiv {
-  background-color: #fec5bb;
+  height: 89vh;
+  background-image: linear-gradient(
+    45deg,
+    rgba(250, 225, 221),
+    rgba(254, 197, 187)
+  );
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -84,6 +89,22 @@ BIO
 }
 .bioDiv img{
   width: 400px;
+}
+
+.blogDiv {
+  height: 89vh;
+  background-image: linear-gradient(
+    45deg,
+    rgba(250, 225, 221),
+    rgba(254, 197, 187)
+  );
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  grid-area: bio;
+  padding: 20px;
 }
 /*
 PEOPLE
@@ -121,6 +142,13 @@ PEOPLE
   transform: rotate(1deg)
 }
 
+/*
+Contact
+*/
+.contactDiv{
+  height: 90vh;
+  text-align: center;
+}
 /*
 Footer
 */
@@ -200,7 +228,15 @@ fonts pc and tablet
     font-size: 14px;
     font-weight: 300;
   }
+  li{
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+  }
 }
+
+
 
 /*
 fonts mobile
@@ -261,6 +297,12 @@ fonts mobile
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     font-weight: 300;
+  }
+  li{
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
   }
 }
 
