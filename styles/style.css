@@ -123,14 +123,14 @@ Blog
   padding: 20px;
 }
 
-.blogDiv .card {
+.blogDiv .blogDiv__card {
   background: rgba(255, 203, 242, 0.3);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.blogDiv .card .card__img {
+.blogDiv .blogDiv__card .blogDiv__card__img {
   width: 40%;
 }
 
