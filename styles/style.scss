@@ -80,8 +80,11 @@ Bio
   justify-content: center;
   align-items: center;
   padding: 20px;
-  img {
+  .bioDiv__img {
     width: 40%;
+  }
+  .bioDiv__parrafo{
+    width: 70%;
   }
 }
 /*
@@ -94,7 +97,7 @@ Blog
   .card {
     background: $color4;
     align-items: center;
-    img {
+    .card__img {
       width: 40%;
     }
   }

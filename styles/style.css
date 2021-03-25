@@ -97,8 +97,12 @@ Bio
   padding: 20px;
 }
 
-.bioDiv img {
+.bioDiv .bioDiv__img {
   width: 40%;
+}
+
+.bioDiv .bioDiv__parrafo {
+  width: 70%;
 }
 
 /*
@@ -117,7 +121,7 @@ Blog
           align-items: center;
 }
 
-.blogDiv .card img {
+.blogDiv .card .card__img {
   width: 40%;
 }
 
