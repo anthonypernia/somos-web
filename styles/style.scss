@@ -1,13 +1,14 @@
-$colorbg: rgba(192, 253, 255,1);
-$colorGra1: rgba(208, 209, 255,0.6);
-$colorGra2: rgba(192, 253, 255,0.6);
-$colorGra3: rgba(200, 231, 255,1);
-$colorGra4: rgba(216, 187, 255,0.5);
-$colorBT1:rgba(216, 187, 255,1);
-$colorBT2:rgba(222, 170, 255,1);
+$color1: rgba(192, 253, 255, 1);
+$colorGra1: rgba(208, 209, 255, 0.6);
+$colorGra2: rgba(192, 253, 255, 0.6);
+$colorGra3: rgba(200, 231, 255, 1);
+$colorGra4: rgba(216, 187, 255, 0.5);
+$color2: rgba(216, 187, 255, 1);
+$color3: rgba(222, 170, 255, 1);
+$color4: rgba(255, 203, 242, 0.3);
 $height1: 94vh;
-$grad2:linear-gradient(45deg, $colorGra3, $colorGra4);
-$grad1:linear-gradient(45deg, $colorGra1, $colorGra2);
+$grad2: linear-gradient(45deg, $colorGra3, $colorGra4);
+$grad1: linear-gradient(45deg, $colorGra1, $colorGra2);
 $grad3: linear-gradient(45deg, $colorGra2, $colorGra1);
 
 body {
@@ -22,7 +23,6 @@ Footer
     background-image: $grad2;
     display: flex;
     justify-content: space-evenly;
-  
   }
   /*
 NAVBAR
@@ -42,7 +42,7 @@ Link de nav y footer
 /*
 MAIN
 */
-.carousel-mine {
+.carousel__box {
   .carousel-item {
     height: $height1;
     background-repeat: no-repeat;
@@ -50,15 +50,13 @@ MAIN
     background-position: center;
     background-attachment: fixed;
   }
-  .carouselitem1 {
-    background-image: $grad1,
-      url("../images/somos1.jpg");
+  .carousel__box__item1 {
+    background-image: $grad1, url("../images/somos1.jpg");
   }
-  .carouselitem2 {
-    background-image: $grad1,
-      url("../images/somos3.jpg");
+  .carousel__box__item2 {
+    background-image: $grad1, url("../images/somos3.jpg");
   }
-  .carousel-text {
+  .carousel__box__text {
     width: 100%;
     height: 100%;
     display: flex;
@@ -90,16 +88,15 @@ Bio
 Blog
 */
 .blogDiv {
-  height: $height1;
-  background-image: $grad1;
-  display: flex;
-  flex-direction: column;
+  background-image: $grad2;
   text-align: center;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
-  img {
-    width: 50%;
+  .card {
+    background: $color4;
+    align-items: center;
+    img {
+      width: 40%;
+    }
   }
 }
 /*
@@ -115,12 +112,14 @@ PEOPLE
   text-align: center;
   padding: 20px;
 
-  .itemContainerPeople {
+  .peopleDiv__itemContainer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-
+    .card {
+      background-color: $color4;
+    }
     .card:hover {
       transform: rotate(1deg);
     }
@@ -133,14 +132,14 @@ Contact
 .contactDiv {
   height: $height1;
   padding: 20px;
-  button{
-      background-color: $colorBT1;
-      border-color: $colorBT2;
+  button:hover {
+    background-color: $color2;
+    border-color: $color3;
   }
-  button:hover{
-    background-color: $colorBT2;
-    border-color: $colorBT1;
-}
+  button {
+    background-color: $color3;
+    border-color: $color2;
+  }
 }
 
 /*
