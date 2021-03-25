@@ -1,0 +1,212 @@
+$colorbg: rgba(192, 253, 255,1);
+$colorGra1: rgba(208, 209, 255,0.6);
+$colorGra2: rgba(192, 253, 255,0.6);
+$colorGra3: rgba(200, 231, 255,1);
+$colorGra4: rgba(216, 187, 255,0.5);
+$colorBT1:rgba(216, 187, 255,1);
+$colorBT2:rgba(222, 170, 255,1);
+$height1: 94vh;
+$grad2:linear-gradient(45deg, $colorGra3, $colorGra4);
+$grad1:linear-gradient(45deg, $colorGra1, $colorGra2);
+$grad3: linear-gradient(45deg, $colorGra2, $colorGra1);
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: $grad2;
+  /*
+Footer
+*/
+  .footerBar {
+    background-image: $grad2;
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
+  /*
+NAVBAR
+*/
+  .navBar {
+    background-image: $grad2;
+  }
+  /*
+Link de nav y footer
+*/
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+/*
+MAIN
+*/
+.carousel-mine {
+  .carousel-item {
+    height: $height1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .carouselitem1 {
+    background-image: $grad1,
+      url("../images/somos1.jpg");
+  }
+  .carouselitem2 {
+    background-image: $grad1,
+      url("../images/somos3.jpg");
+  }
+  .carousel-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    color: black;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+/*
+Bio
+*/
+.bioDiv {
+  height: $height1;
+  background-image: $grad3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  img {
+    width: 40%;
+  }
+}
+/*
+Blog
+*/
+.blogDiv {
+  height: $height1;
+  background-image: $grad1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  img {
+    width: 50%;
+  }
+}
+/*
+PEOPLE
+*/
+.peopleDiv {
+  height: $height1;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: $grad3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+
+  .itemContainerPeople {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .card:hover {
+      transform: rotate(1deg);
+    }
+  }
+}
+
+/*
+Contact
+*/
+.contactDiv {
+  height: $height1;
+  padding: 20px;
+  button{
+      background-color: $colorBT1;
+      border-color: $colorBT2;
+  }
+  button:hover{
+    background-color: $colorBT2;
+    border-color: $colorBT1;
+}
+}
+
+/*
+fonts pc and tablet
+*/
+@media (min-width: 700px) {
+  h1 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+  }
+
+  h2 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .textMain h2 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+  }
+  h3 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  h4 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  h5 {
+    font-style: italic;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  p {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  a {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .footerBar a {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  li {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+  }
+}
