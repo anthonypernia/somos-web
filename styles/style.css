@@ -25,6 +25,46 @@ body .footerBar {
           justify-content: space-evenly;
 }
 
+body .footerBar .facebook_rrss_icon {
+  content: url("../images/icon/facebook_icon.png");
+  width: 22px;
+}
+
+body .footerBar .facebook_rrss_icon:hover {
+  border-color: #deaaff;
+  background-color: #d8bbff;
+}
+
+body .footerBar .instagram_rrss_icon {
+  content: url("../images/icon/instagram_icon.png");
+  width: 22px;
+}
+
+body .footerBar .instagram_rrss_icon:hover {
+  border-color: #deaaff;
+  background-color: #d8bbff;
+}
+
+body .footerBar .mail_rrss_icon {
+  content: url("../images/icon/mail_icon.png");
+  width: 22px;
+}
+
+body .footerBar .mail_rrss_icon:hover {
+  border-color: #deaaff;
+  background-color: #d8bbff;
+}
+
+body .footerBar .twitter_rrss_icon {
+  content: url("../images/icon/twitter_icon.png");
+  width: 22px;
+}
+
+body .footerBar .twitter_rrss_icon:hover {
+  border-color: #deaaff;
+  background-color: #d8bbff;
+}
+
 body .navBar {
   background-image: linear-gradient(45deg, #c8e7ff, rgba(216, 187, 255, 0.5));
 }
@@ -44,6 +84,9 @@ body a:hover {
 }
 
 /*
+operacion para container
+*/
+/*
 MAIN
 */
 .carousel__box .carousel-item {
@@ -59,7 +102,7 @@ MAIN
 }
 
 .carousel__box .carousel__box__item2 {
-  background-image: linear-gradient(45deg, rgba(208, 209, 255, 0.6), rgba(192, 253, 255, 0.6)), url("../images/somos3.jpg");
+  background-image: linear-gradient(45deg, rgba(208, 209, 255, 0.6), rgba(192, 253, 255, 0.6)), url("../images/somos2.jpg");
 }
 
 .carousel__box .carousel__box__text {
@@ -89,6 +132,7 @@ Bio
 .bioDiv {
   height: 94vh;
   background-image: linear-gradient(45deg, rgba(192, 253, 255, 0.6), rgba(208, 209, 255, 0.6));
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,7 +140,6 @@ Bio
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -139,9 +182,10 @@ PEOPLE
 */
 .peopleDiv {
   height: 94vh;
+  background-image: linear-gradient(45deg, rgba(192, 253, 255, 0.6), rgba(208, 209, 255, 0.6));
+  text-align: center;
   background-position: center;
   background-attachment: fixed;
-  background-image: linear-gradient(45deg, rgba(192, 253, 255, 0.6), rgba(208, 209, 255, 0.6));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,7 +193,6 @@ PEOPLE
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
   padding: 20px;
 }
 
@@ -181,6 +224,7 @@ Contact
 */
 .contactDiv {
   height: 94vh;
+  height: 94vh;
   padding: 20px;
 }
 
@@ -195,7 +239,7 @@ Contact
 }
 
 /*
-fonts pc and tablet
+operacion para letra
 */
 /*
 fonts pc and tablet
@@ -259,6 +303,72 @@ fonts pc and tablet
     font-style: normal;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
+    font-weight: 100;
+  }
+}
+
+/*
+fonts mobile
+*/
+@media (max-width: 699px) {
+  h1 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+  }
+  h2 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .textMain h2 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+  }
+  h3 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  h4 {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  h5 {
+    font-style: italic;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  p {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  a {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .footerBar a {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  li {
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
     font-weight: 100;
   }
 }

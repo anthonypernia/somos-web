@@ -8,6 +8,7 @@ $color3: rgba(222, 170, 255, 1);
 $color4: rgba(255, 203, 242, 0.3);
 $color5: rgba(66, 30, 88, 1);
 $height1: 94vh;
+$class_carousel: carousel__box__item;
 $text1: "Roboto", sans-serif;
 $grad2: linear-gradient(45deg, $colorGra3, $colorGra4);
 $grad1: linear-gradient(45deg, $colorGra1, $colorGra2);
@@ -25,7 +26,19 @@ Footer
     background-image: $grad2;
     display: flex;
     justify-content: space-evenly;
+
+    @each $rrss in facebook, instagram, mail, twitter {
+      .#{$rrss}_rrss_icon {
+        content: url("../images/icon/#{$rrss}_icon.png");
+        width: 22px;
+      }
+      .#{$rrss}_rrss_icon:hover {
+        border-color: $color3;
+        background-color: $color2;
+      }
+    }
   }
+
   /*
 NAVBAR
 */
@@ -51,6 +64,21 @@ Link de nav y footer
 }
 
 /*
+operacion para container
+*/
+@mixin default_container($height, $background-image, $text-align) {
+  @if $height != 0 {
+    height: $height;
+  }
+  @if $background-image != 0 {
+    background-image: $background-image;
+  }
+  @if $text-align!= 0 {
+    text-align: $text-align;
+  }
+}
+
+/*
 MAIN
 */
 .carousel__box {
@@ -61,11 +89,11 @@ MAIN
     background-position: center;
     background-attachment: fixed;
   }
-  .carousel__box__item1 {
-    background-image: $grad1, url("../images/somos1.jpg");
-  }
-  .carousel__box__item2 {
-    background-image: $grad1, url("../images/somos3.jpg");
+
+  @each $num in 1, 2 {
+    .#{$class_carousel}#{$num} {
+      background-image: $grad1, url("../images/somos#{$num}.jpg");
+    }
   }
   .carousel__box__text {
     width: 100%;
@@ -83,11 +111,9 @@ MAIN
 Bio
 */
 .bioDiv {
-  height: $height1;
-  background-image: $grad3;
+  @include default_container($height1, $grad3, center);
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -102,8 +128,7 @@ Bio
 Blog
 */
 .blogDiv {
-  background-image: $grad2;
-  text-align: center;
+  @include default_container(0, $grad2, center);
   padding: 20px;
   .blogDiv__card {
     background: $color4;
@@ -117,13 +142,11 @@ Blog
 PEOPLE
 */
 .peopleDiv {
-  height: $height1;
+  @include default_container($height1, $grad3, center);
   background-position: center;
   background-attachment: fixed;
-  background-image: $grad3;
   display: flex;
   flex-direction: column;
-  text-align: center;
   padding: 20px;
 
   .peopleDiv__itemContainer {
@@ -139,11 +162,11 @@ PEOPLE
     }
   }
 }
-
 /*
 Contact
 */
 .contactDiv {
+  @include default_container($height1, 0, 0);
   height: $height1;
   padding: 20px;
   button:hover {
@@ -157,74 +180,83 @@ Contact
 }
 
 /*
-fonts pc and tablet
+operacion para letra
 */
-
+@mixin font_default($style, $size, $weight) {
+  font-style: $style;
+  font-family: $text1;
+  font-size: $size;
+  font-weight: $weight;
+}
 
 /*
 fonts pc and tablet
 */
 @media (min-width: 700px) {
   h1 {
-    font-style: normal;
-    font-family: $text1;
-    font-size: 40px;
-    font-weight: 100;
+    @include font_default(normal, 40px, 100);
   }
-
   h2 {
-    font-style: normal;
-    font-family: $text1;
-    font-size: 22px;
-    font-weight: 500;
+    @include font_default(normal, 22px, 500);
   }
   .textMain h2 {
-    font-style: normal;
-    font-family: $text1;
-    font-size: 22px;
-    font-weight: 200;
+    @include font_default(normal, 22px, 200);
   }
   h3 {
-    font-style: normal;
-    font-family: $text1;
-    font-size: 18px;
-    font-weight: 400;
+    @include font_default(normal, 18px, 400);
   }
   h4 {
-    font-style: normal;
-    font-family: $text1;
-    font-size: 15px;
-    font-weight: 300;
+    @include font_default(normal, 15px, 300);
   }
   h5 {
-    font-style: italic;
-    font-family: $text1;
-    font-size: 15px;
-    font-weight: 300;
+    @include font_default(italic, 15px, 300);
   }
   p {
-    font-style: normal;
-    font-family: $text1;
-    font-size: 15px;
-    font-weight: 100;
+    @include font_default(normal, 15px, 100);
   }
   a {
-    font-style: normal;
-    font-family: $text1;
-    font-size: 15px;
-    font-weight: 300;
+    @include font_default(normal, 15px, 300);
   }
 
   .footerBar a {
-    font-style: normal;
-    font-family: $text1;
-    font-size: 14px;
-    font-weight: 300;
+    @include font_default(normal, 14px, 300);
   }
   li {
-    font-style: normal;
-    font-family: $text1;
-    font-size: 14px;
-    font-weight: 100;
+    @include font_default(normal, 14px, 100);
+  }
+}
+/*
+fonts mobile
+*/
+@media (max-width: 699px) {
+  h1 {
+    @include font_default(normal, 30px, 100);
+  }
+  h2 {
+    @include font_default(normal, 18px, 500);
+  }
+  .textMain h2 {
+    @include font_default(normal, 17px, 200);
+  }
+  h3 {
+    @include font_default(normal, 15px, 400);
+  }
+  h4 {
+    @include font_default(normal, 13px, 300);
+  }
+  h5 {
+    @include font_default(italic, 12px, 300);
+  }
+  p {
+    @include font_default(normal, 14px, 100);
+  }
+  a {
+    @include font_default(normal, 14px, 300);
+  }
+  .footerBar a {
+    @include font_default(normal, 12px, 300);
+  }
+  li {
+    @include font_default(normal, 12px, 100);
   }
 }
