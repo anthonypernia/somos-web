@@ -8,6 +8,7 @@ $color3: rgba(222, 170, 255, 1);
 $color4: rgba(255, 203, 242, 0.3);
 $color5: rgba(66, 30, 88, 1);
 $height1: 94vh;
+$text1: "Roboto", sans-serif;
 $grad2: linear-gradient(45deg, $colorGra3, $colorGra4);
 $grad1: linear-gradient(45deg, $colorGra1, $colorGra2);
 $grad3: linear-gradient(45deg, $colorGra2, $colorGra1);
@@ -158,66 +159,71 @@ Contact
 /*
 fonts pc and tablet
 */
+
+
+/*
+fonts pc and tablet
+*/
 @media (min-width: 700px) {
   h1 {
     font-style: normal;
-    font-family: "Roboto", sans-serif;
+    font-family: $text1;
     font-size: 40px;
     font-weight: 100;
   }
 
   h2 {
     font-style: normal;
-    font-family: "Roboto", sans-serif;
+    font-family: $text1;
     font-size: 22px;
     font-weight: 500;
   }
   .textMain h2 {
     font-style: normal;
-    font-family: "Roboto", sans-serif;
+    font-family: $text1;
     font-size: 22px;
     font-weight: 200;
   }
   h3 {
     font-style: normal;
-    font-family: "Roboto", sans-serif;
+    font-family: $text1;
     font-size: 18px;
     font-weight: 400;
   }
   h4 {
     font-style: normal;
-    font-family: "Roboto", sans-serif;
+    font-family: $text1;
     font-size: 15px;
     font-weight: 300;
   }
   h5 {
     font-style: italic;
-    font-family: "Roboto", sans-serif;
+    font-family: $text1;
     font-size: 15px;
     font-weight: 300;
   }
   p {
     font-style: normal;
-    font-family: "Roboto", sans-serif;
+    font-family: $text1;
     font-size: 15px;
     font-weight: 100;
   }
   a {
     font-style: normal;
-    font-family: "Roboto", sans-serif;
+    font-family: $text1;
     font-size: 15px;
     font-weight: 300;
   }
 
   .footerBar a {
     font-style: normal;
-    font-family: "Roboto", sans-serif;
+    font-family: $text1;
     font-size: 14px;
     font-weight: 300;
   }
   li {
     font-style: normal;
-    font-family: "Roboto", sans-serif;
+    font-family: $text1;
     font-size: 14px;
     font-weight: 100;
   }
