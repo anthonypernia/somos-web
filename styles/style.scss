@@ -31,6 +31,7 @@ Footer
       .#{$rrss}_rrss_icon {
         content: url("../images/icon/#{$rrss}_icon.png");
         width: 22px;
+        height: 22px;;
       }
       .#{$rrss}_rrss_icon:hover {
         border-color: $color3;
