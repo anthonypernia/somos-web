@@ -1,0 +1,34 @@
+{
+  "testimonios": [
+    {
+      "nombre": "Agustina Vega",
+      "ocupacion": "Estudiante Universitaria",
+      "ciudad": "CABA - Buenos Aires",
+      "opinion": "En el momento donde no sabía cómo mejorar la comunicación con mis padres y con quilombos en la facultad entre por descarte al perfil de Somos de instagram y me gusto su contenido empecé a sentirme identificada y fui aplicando cosas para mejorar mi situación y al día de hoy puedo decir que me siento tranquila al ver a mis padres y saber que cada quien lleva preocupaciones y necesitaba acercarme y decirles lo que me pasaba y hoy decir todo fue una etapa pero aprendí a que toda situación es tan buena o mala como la queramos tomar y gestionar."
+    },
+    {
+      "nombre": "Pablo Esquinazi",
+      "ocupacion": "Estudiante universitario y Repartidor",
+      "ciudad": "La Plata - Buenos Aires",
+      "opinion": "Parece ser que no pego ni una todo me sale como menos lo espero , esas eran las palabras que me acompañaban pero en un live de la comunidad  Somos , titulada -relatos de una vida de  sin filtros ,   me identifique y quise crear otra realidad con lo que tenía,  porque no podía quedarme con lo gris de ese momento tenía que llenarme  de motivos y razones (mi hija ) , cuando me hice miembro de Somos cree un círculo de amistades que me ayudaron en las bajas de el proceso"
+    },
+    {
+      "nombre": "Laura Perez",
+      "ocupacion": "Diseñadora Grafica",
+      "ciudad": "Bogota - Colombia",
+      "opinion": "Enfrentándome a los cambios enormes de mi cuerpo ,cuestionando porque sentía presión y depresión en ese trayecto de ser madre, donde mis amigas decían haber disfrutado tanto esa etapa y en mi piel todo estaba siendo algo complejo , al principio no acepte lo que me pasaba , pero con un post de publicidad que decía : Exprésate para sanar y trabajar las cosas que en silencio te ahogan “. En ese momento intente poner eso en mi vida real y poco a poco me ayudo demasiado"
+    },
+    {
+      "nombre": "Rodrigo Hernandez",
+      "ocupacion": "Empleado Metalurgico",
+      "ciudad": "Quito - Ecuador",
+      "opinion": "Somos me hizo sentir  parte de esta familia donde nos apoyamos , reímos y pasamos momentos cheveres  a la distancia"
+    },
+    {
+      "nombre": "Juan Lopez",
+      "ocupacion": "Jubilado",
+      "ciudad": "Montevideo - Uruguay",
+      "opinion": "Mi nieta Juana me enseño a usar el teléfono y me mostraba imágenes que publicaban que una que otra vez me arrebataron lágrimas de sentimientos lindos porque sencillamente no existe manual para vivir pero si podemos llenarnos de un entorno que nos ayude a ser mejores personas y eso me generó la pagina de Somos"
+    }
+  ]
+}

@@ -143,7 +143,7 @@ Blog
 PEOPLE
 */
 .peopleDiv {
-  @include default_container($height1, $grad3, center);
+  @include default_container(0, $grad3, center);
   background-position: center;
   background-attachment: fixed;
   display: flex;
