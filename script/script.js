@@ -1,10 +1,14 @@
-var json = require('../data/data.json');
-console.log(json);
 
+var url = "https://raw.githubusercontent.com/anthonyperniah/IntroWebCH/master/data/data.json"
 
 function set_data() {
-    var json = require('../data/data.json');
-    console.log(json);
+    var Http = new XMLHttpRequest();
+    Http.open("GET", url);
+    Http.send();
+    Http.onreadystatechange = (e) => {
+        var result = JSON.parse(Http.response);
+        console.log(result)
+    }
 }
 
 
