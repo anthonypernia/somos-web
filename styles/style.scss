@@ -26,17 +26,20 @@ Footer
     background-image: $grad2;
     display: flex;
     justify-content: space-evenly;
-
-    @each $rrss in facebook, instagram, mail, twitter {
-      .#{$rrss}_rrss_icon {
-        content: url("../images/icon/#{$rrss}_icon.png");
-        width: 22px;
-        height: 22px;;
+    a{
+      padding-left: 30px;
+      padding-right: 30px;
+      @each $rrss in facebook, instagram, mail, twitter {
+        .#{$rrss}_rrss_icon {
+          content: url("../images/icon/#{$rrss}_icon.png");
+          width: 22px;
+          height: 22px;
+        }
       }
-      .#{$rrss}_rrss_icon:hover {
-        border-color: $color3;
-        background-color: $color2;
-      }
+    }
+    a:hover{
+      border-color: $color3;
+      background-color: $color2;
     }
   }
 
@@ -157,6 +160,7 @@ PEOPLE
     justify-content: space-around;
     .card {
       background-color: $color4;
+      margin-bottom: 10px;
     }
     .card:hover {
       transform: rotate(1deg);
