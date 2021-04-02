@@ -143,6 +143,32 @@ Blog
   }
 }
 /*
+error
+*/
+.errorDiv {
+  @include default_container($height1, $grad3, center);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  .errorDiv__titulo{
+    color: red;
+    font-size: 40px;
+  }
+  a{
+    color: black;
+  }
+  a:hover{
+    color: black;
+    background-color: $color2;
+  }
+  .errorDiv__img {
+    width: 30%;
+  }
+}
+
+/*
 PEOPLE
 */
 .peopleDiv {

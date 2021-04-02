@@ -172,6 +172,47 @@ Blog
 }
 
 /*
+error
+*/
+.errorDiv {
+  height: 94vh;
+  background-image: linear-gradient(45deg, rgba(192, 253, 255, 0.6), rgba(208, 209, 255, 0.6));
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.errorDiv .errorDiv__titulo {
+  color: red;
+  font-size: 40px;
+}
+
+.errorDiv a {
+  color: black;
+}
+
+.errorDiv a:hover {
+  color: black;
+  background-color: #d8bbff;
+}
+
+.errorDiv .errorDiv__img {
+  width: 30%;
+}
+
+/*
 PEOPLE
 */
 .peopleDiv {
