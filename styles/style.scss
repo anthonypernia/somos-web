@@ -26,7 +26,10 @@ Footer
     background-image: $grad2;
     display: flex;
     justify-content: space-evenly;
-    a{
+    a {
+      /*
+Aca debajo, se agregan los iconos que se ven en el footer
+*/
       padding-left: 30px;
       padding-right: 30px;
       @each $rrss in facebook, instagram, mail, twitter {
@@ -37,12 +40,11 @@ Footer
         }
       }
     }
-    a:hover{
+    a:hover {
       border-color: $color3;
       background-color: $color2;
     }
   }
-
   /*
 NAVBAR
 */
@@ -66,7 +68,6 @@ Link de nav y footer
     color: $color5;
   }
 }
-
 /*
 operacion para container
 */
@@ -81,7 +82,6 @@ operacion para container
     text-align: $text-align;
   }
 }
-
 /*
 MAIN
 */
@@ -93,7 +93,9 @@ MAIN
     background-position: center;
     background-attachment: fixed;
   }
-
+  /*
+Aca debajo seteo el background del div en el carousel de la primera pagina (index.html)
+*/
   @each $num in 1, 2 {
     .#{$class_carousel}#{$num} {
       background-image: $grad1, url("../images/somos#{$num}.jpg");
@@ -143,7 +145,7 @@ Blog
   }
 }
 /*
-error
+error page
 */
 .errorDiv {
   @include default_container($height1, $grad3, center);
@@ -152,14 +154,14 @@ error
   justify-content: center;
   align-items: center;
   padding: 20px;
-  .errorDiv__titulo{
+  .errorDiv__titulo {
     color: red;
     font-size: 40px;
   }
-  a{
+  a {
     color: black;
   }
-  a:hover{
+  a:hover {
     color: black;
     background-color: $color2;
   }

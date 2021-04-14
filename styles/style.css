@@ -26,6 +26,9 @@ body .footerBar {
 }
 
 body .footerBar a {
+  /*
+Aca debajo, se agregan los iconos que se ven en el footer
+*/
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -83,6 +86,12 @@ operacion para container
 /*
 MAIN
 */
+.carousel__box {
+  /*
+Aca debajo seteo el background del div en el carousel de la primera pagina (index.html)
+*/
+}
+
 .carousel__box .carousel-item {
   height: 94vh;
   background-repeat: no-repeat;
@@ -172,7 +181,7 @@ Blog
 }
 
 /*
-error
+error page
 */
 .errorDiv {
   height: 94vh;
