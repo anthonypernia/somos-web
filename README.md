@@ -43,7 +43,6 @@ La pagina inicia consta de un carrusel con BS de dos imagenes
 
   
     
-    
 
-###### Anthony Pernia [Page](https://anthonyperniah.github.io/).   
+###### Anthony Pernia [@AnthonyPerniaH](https://anthonyperniah.github.io/) © 2021.   
   
