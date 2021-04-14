@@ -2,6 +2,9 @@
  #### ***El valor del bienestar***
 ----
 
+<br/>
+<br/>
+<br/>
 
 **Proyecto final de curso de Desarrollo Web.**
 
@@ -11,14 +14,30 @@ La pagina inicia consta de un carrusel con BS de dos imagenes
 
  - `Pagina inicial 1 `
 ![alt text](https://github.com/anthonyperniah/SomosWeb/blob/master/images/preview/main1.png?raw=true)
+<br/>
 
  - `Pagina inicial 2 `
 ![alt text](https://github.com/anthonyperniah/SomosWeb/blob/master/images/preview/main2.png?raw=true)
- - `Si bien la pagina la hizo Anthony, quienes son los que mantienen el contenido de la web SOMOS?`
+<br/>
+ - `Si bien la pagina la hizo Anthony, quienes son los que mantendrian el contenido de la web SOMOS?`
 ![alt text](https://github.com/anthonyperniah/SomosWeb/blob/master/images/preview/about.png?raw=true)
+<br/>
  - `Bloque con testimonios, personas hablando de la pagina`
 ![alt text](https://github.com/anthonyperniah/SomosWeb/blob/master/images/preview/person.png?raw=true)
+<br/>
  - `Contacta a los administradores (Web Page de contacto)`
  ![alt text](https://github.com/anthonyperniah/SomosWeb/blob/master/images/preview/contact.png?raw=true)
+<br/>
+<br/>
+<br/>
+<br/>
 
 
+
+
+  
+    
+    
+
+###### Anthony Pernia [Page](https://anthonyperniah.github.io/).   
+  
