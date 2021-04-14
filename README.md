@@ -44,5 +44,5 @@ La pagina inicia consta de un carrusel con BS de dos imagenes
   
     
 
-###### Anthony Pernia [@AnthonyPerniaH](https://anthonyperniah.github.io/) © 2021.   
+###### Anthony Pernia <a href="https://anthonyperniah.github.io/" target="_blank">@AnthonyPerniaH</a> © 2021. 
   
