@@ -13,7 +13,9 @@ $text1: "Roboto", sans-serif;
 $grad2: linear-gradient(45deg, $colorGra3, $colorGra4);
 $grad1: linear-gradient(45deg, $colorGra1, $colorGra2);
 $grad3: linear-gradient(45deg, $colorGra2, $colorGra1);
-
+  /*
+Al inicio, todo a 0, y set bg
+*/
 body {
   margin: 0;
   padding: 0;
