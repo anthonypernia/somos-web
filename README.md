@@ -1,11 +1,7 @@
  ### **PROYECTO SOMOS**
  #### ***El valor del bienestar***
 ----
-
 <br/>
-<br/>
-<br/>
-
 **Proyecto final de curso de Desarrollo Web.**
 
 Desarrollo de front-end pagina web, para page de IG, realizado con HTML y CSS, incluyendo modificaciones en JS. Se usa SASS para facilitar el trabajo con CSS. 
