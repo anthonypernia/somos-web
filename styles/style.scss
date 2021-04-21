@@ -65,8 +65,9 @@ NAVBAR
     .navbar {
       background-image: $grad2;
       div {
-        a:hover {
+        .nav-link-item:hover {
           background-color: $color2;
+          font-weight: 500;
         }
         div {
           justify-content: center;

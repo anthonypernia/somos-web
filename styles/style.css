@@ -78,8 +78,9 @@ body .navBar .navbar {
   background-image: linear-gradient(45deg, #c8e7ff, rgba(216, 187, 255, 0.5));
 }
 
-body .navBar .navbar div a:hover {
+body .navBar .navbar div .nav-link-item:hover {
   background-color: #d8bbff;
+  font-weight: 500;
 }
 
 body .navBar .navbar div div {
