@@ -82,6 +82,7 @@ body a {
 body a:hover {
   border-color: #deaaff;
   color: #421e58;
+  font-weight: 400;
 }
 
 /*
@@ -97,7 +98,7 @@ Aca debajo seteo el background del div en el carousel de la primera pagina (inde
 }
 
 .carousel__box .carousel-item {
-  height: 92vh;
+  height: calc(26em + 27vw);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -137,7 +138,7 @@ Aca debajo seteo el background del div en el carousel de la primera pagina (inde
 Bio
 */
 .bioDiv {
-  height: 92vh;
+  min-height: calc(26em + 27vw);
   background-image: linear-gradient(45deg, rgba(192, 253, 255, 0.6), rgba(208, 209, 255, 0.6));
   text-align: center;
   display: -webkit-box;
@@ -189,7 +190,7 @@ Blog
 error page
 */
 .errorDiv {
-  height: 92vh;
+  min-height: calc(26em + 27vw);
   background-image: linear-gradient(45deg, rgba(192, 253, 255, 0.6), rgba(208, 209, 255, 0.6));
   text-align: center;
   display: -webkit-box;
@@ -251,7 +252,7 @@ PEOPLE
 }
 
 .peopleDiv .peopleDiv__itemContainer {
-  width: 70%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,10 +282,10 @@ PEOPLE
 Contact
 */
 .contactDiv {
-  height: 92vh;
+  min-height: calc(26em + 27vw);
   background-image: linear-gradient(45deg, rgba(192, 253, 255, 0.6), rgba(208, 209, 255, 0.6));
   text-align: center;
-  height: 92vh;
+  height: calc(26em + 27vw);
   padding: 20px;
 }
 
