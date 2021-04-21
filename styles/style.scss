@@ -7,15 +7,25 @@ $color2: rgba(216, 187, 255, 1);
 $color3: rgba(222, 170, 255, 1);
 $color4: rgba(255, 203, 242, 0.3);
 $color5: rgba(66, 30, 88, 1);
-$height1: calc(26em + 27vw);
+$color6: black;
+$height1: 88vh;
 $class_carousel: carousel__box__item;
 $text1: "Roboto", sans-serif;
 $grad2: linear-gradient(45deg, $colorGra3, $colorGra4);
 $grad1: linear-gradient(45deg, $colorGra1, $colorGra2);
 $grad3: linear-gradient(45deg, $colorGra2, $colorGra1);
-  /*
+
+/*
+importo este tipo de letra para hacer tipografia like disney
+*/
+@font-face {
+  font-family: DisneyFont;
+  src: url("../font/Walt.ttf");
+}
+/*
 Al inicio, todo a 0, y set bg
 */
+
 body {
   margin: 0;
   padding: 0;
@@ -44,7 +54,7 @@ Aca debajo, se agregan los iconos que se ven en el footer
       }
     }
     a:hover {
-      border-color: $color3;
+      border-color: $color5;
       background-color: $color2;
     }
   }
@@ -52,10 +62,16 @@ Aca debajo, se agregan los iconos que se ven en el footer
 NAVBAR
 */
   .navBar {
-    background-image: $grad2;
-    .navBar__ul {
-      .navBar__ul__li:hover {
-        background-color: $color3;
+    .navbar {
+      background-image: $grad2;
+      div {
+        a:hover {
+          background-color: $color2;
+        }
+        div {
+          justify-content: center;
+          align-items: center;
+        }
       }
     }
   }
@@ -69,7 +85,6 @@ Link de nav y footer
   a:hover {
     border-color: $color3;
     color: $color5;
-    font-weight: 400;
   }
 }
 /*
@@ -87,15 +102,17 @@ operacion para container
   }
 }
 /*
-MAIN
+MAIN (Carousel)
 */
-.carousel__box {
-  .carousel-item {
-    height: $height1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+.mainSection {
+  .carousel__box {
+    .carousel-item {
+      height: $height1;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
   }
   /*
 Aca debajo seteo el background del div en el carousel de la primera pagina (index.html)
@@ -115,6 +132,15 @@ Aca debajo seteo el background del div en el carousel de la primera pagina (inde
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+}
+.mainSectionSec {
+  .mainDivSecondary {
+    text-align: center;
+    .phrase-text1 , .phrase-text2{
+      color: $color6;
+      font-family: "DisneyFont";
+    }
   }
 }
 /*
@@ -209,8 +235,7 @@ PEOPLE
 Contact
 */
 .contactDiv {
-  
-  @include default_container($height1, $grad3, center);
+  @include default_container($height1, $grad3, 0);
   height: $height1;
   padding: 20px;
 
@@ -238,9 +263,11 @@ operacion para letra
 fonts pc and tablet
 */
 @media (min-width: 700px) {
-  h1 {
+  h1,
+  .main-title {
     @include font_default(normal, 40px, 100);
   }
+
   h2 {
     @include font_default(normal, 22px, 500);
   }
@@ -274,7 +301,8 @@ fonts pc and tablet
 fonts mobile
 */
 @media (max-width: 699px) {
-  h1 {
+  h1,
+  .main-title {
     @include font_default(normal, 30px, 100);
   }
   h2 {
