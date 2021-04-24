@@ -33,6 +33,12 @@ La pagina inicia consta de un carrusel con BS de dos imagenes
  - `Contacta a los administradores (Web Page de contacto)`
  ![alt text](https://github.com/anthonyperniah/SomosWeb/blob/master/images/preview/contact.png?raw=true)
 
+
+ - `Blog`
+ ![alt text](https://github.com/anthonyperniah/SomosWeb/blob/master/images/preview/blog.png?raw=true)
+
+
+
 <br/>
 <br/>
 <br/>
